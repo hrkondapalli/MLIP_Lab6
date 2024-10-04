@@ -14,10 +14,12 @@ pipeline {
             steps {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
-                python3 -m venv mlip_harish
-                source mlip_harish/bin/activate
+                python3 -m venv mlip_harish1
+                source mlip_harish1/bin/activate
+
                 # TODO fill out the path to conda here
                 #sudo /PATH/TO/CONDA init
+
                 pip install pytest numpy pandas scikit-learn
 
                 # TODO Complete the command to run pytest
